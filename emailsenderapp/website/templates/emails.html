@@ -1,0 +1,8 @@
+{% extends "layout_emails.html" %}
+
+{% block title %}Emails{% endblock %}
+
+{% block content %}
+    <h1>Here is the list of emails</h1>
+    <a href="{% url 'website:add' %}"><h2>Add email</h2></a>
+{% endblock %}

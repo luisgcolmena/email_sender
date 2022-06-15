@@ -15,3 +15,9 @@ def hello_sombri(request):
 
 def hello(request, names):
     return HttpResponse(f'Hello, {names}!')
+
+def emails(request):
+    return render(request, 'emails.html')
+
+def add_emails(request):
+    return render(request, 'add_emails.html')

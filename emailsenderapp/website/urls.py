@@ -18,10 +18,14 @@ from unicodedata import name
 from django.urls import path
 from . import views
 
+app_name = 'website'
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('Luis/', views.hello_luisgerardo, name='luisgerardo'),
     path('María/', views.hello_maria, name='maria'),
     path('Sombri/', views.hello_sombri, name='sombri'),
-    path('<str:names>/', views.hello)
+    #path('<str:names>/', views.hello),
+    path('emails/', views.emails, name='emails'),
+    path('add', views.add_emails, name='add')
 ]
